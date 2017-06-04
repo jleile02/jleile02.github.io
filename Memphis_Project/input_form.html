@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project Memphis</title>
+
+    <!-- Insert Style Sheet Here-->
+    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/normalize.css" />
+    <!-- Insert Google Fonts Here -->
+<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+</head>
+<body>
+	<section>
+<div class="journal">
+
+<h3>A demonstration of how to access a Text Field</h3>
+
+<input type="text" id="myText" value="Some text...">
+
+<p>Click the "Try it" button to get the text in the text field.</p>
+</div>
+
+<div class="TryIt">
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+</div>
+</section>
+	<a href="index.html">Home</a>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+/* Attribute Selectors ------------- */
+
+.form-contact {
+  padding: 20px 24px;
+  background: #f4f7f8;
+}
+
+#container{
+
+  max-width:500px;
+  margin:auto;
+}
+
+input[type="email"] {
+background:#fdfee6;
+}
+
+
+
+a[target="_blank"]{
+
+color:#39add1;
+  text-decoration:none;
+  border-bottom:1px dotted;
+}
+
+/* DRY Classes------------ */
+
+.br {
+border-radius:.5em;
+
+
+}
+
+.avatar {
+display:block;
+  margin:0 auto 2em;
+
+}
+
+.rounded {
+border-radius:50%;
+  
+
+}
+
+.btn {
+cursor:pointer;
+font-size: .875em;
+  font-weight:400;
+  color: #fff;
+  padding-left:20px;
+  padding-right:20px;
+  text-transform:uppercase;
+  
+}
+
+.btn: hover {
+opacity:.75;
+}
+
+.default {
+background-color: #52bab3;
+  }
+
+.error {
+background-color: #ff784f;}
+
+
+
+
+@media (min-width: 769px) {
+.inln {
+width:auto;
+  display:inline-block;
+}
+.btn + .btn {
+margin-left: 20px;
+}
+}
+
+
+/* Combinators------ > + ~ ----- */
+  
+form > a {
+font-size:.7em;
+}
+
+/* UI element states pseudo-classes ------------ */
+
+img[title^="product-"] {
+  border-color: lightblue;
+}
+a[href$=".html"] { text-decoration: none; } And don't forget to remove the "-" in a[href$='.html']
+
+img[src*='preview']{ width: 100%; }
+  
+  
+  
+  /* Class Progbar */
+/*
+.progbar {
+  display: block;
+  width: 50%;
+  height: 100%;
+  border-radius: inherit;
+    background-color: #5ece7f; 
+}
+
+.progbar {
+
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    position: absolute;
+    left: 49%;
+    top: -9px;
+    background-color: #7dd898; 
+}
+
+.progbar {
+  height: 6px;
+  border-radius: 3px;
+  background: #d6d7d9;
+  position: relative;
+  margin-bottom: 3.875em; 
+}
+  
+  */
+
+  
+  
+  
+  
+  
+  
