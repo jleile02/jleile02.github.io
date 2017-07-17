@@ -3,37 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Project Memphis</title>
+ <script src="myscripts.js"></script>
 
     <!-- Insert Style Sheet Here-->
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+    <link rel = "stylesheet" type = "text/css" href = "css/style_journal.css" />
     <link rel = "stylesheet" type = "text/css" href = "css/normalize.css" />
     <!-- Insert Google Fonts Here -->
-<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
 </head>
 <body>
 	<section>
 <div class="journal">
 
-<h3>A demonstration of how to access a Text Field</h3>
+<h3>Write what you are thinking...don't think, just write</h3>
 
-<input type="text" id="myText" value="Some text...">
+<input type="text" id="myText" value="“Beware of advice—even this.—Carl Sandburg">
 
-<p>Click the "Try it" button to get the text in the text field.</p>
+<p>Click the button to create your thoughts.</p>
 </div>
 
 <div class="TryIt">
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">Create</button>
 <p id="demo"></p>
-
-<script>
-function myFunction() {
+<!-- This JS allows for a person to act on a screen by pressing a button and it changes what they typed in the input form to an output below the input form for a journal entry.  I changed the font so that it looks like normal type and once you push the button it changes it to cursive. -->
+<script> function myFunction() {
     var x = document.getElementById("myText").value;
     document.getElementById("demo").innerHTML = x;
 }
 </script>
+
+
+
 </div>
 </section>
 	<a href="index.html">Home</a>
 
 </body>
+<footer> 
+<a href="index.html" class="hero-button">Back to Home</a></footer>
 </html>

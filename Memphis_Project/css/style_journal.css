@@ -1,0 +1,109 @@
+/****** Base ******/
+body {
+    font-family: 'Inknut Antiqua', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Inknut Antiqua', serif;
+    text-transform: uppercase;
+    margin: 1em 0;
+    
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+ color: #293132;
+ }
+h3 {
+
+  font-size: 1.75rem;
+  color: #ffffff;
+
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+
+.p2 {
+ font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-weight: 300;
+ text-align: justify;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+/*I am using the same class in multiple HTML pages...I need to clean this up and make 1 CSS.  I started two projects and combined.  This is not a good "DRY" approach* I also made this page go back to the home index*/
+.hero-button {
+  font-size: 1.4rem;
+  font-family: 'Inknut Antiqua', serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid #FFFFFF;
+  padding: 6px 12px;
+   font-size: 1.75rem;
+ color: #293132;
+}
+
+.hero-button:hover {
+  border-color: #871719;
+  background-color: #871719;
+}
+footer {
+    text-align: center;
+}
+
+
+/******Journal Page ******/
+.journal {
+  background-color: #293132;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #FFFFFF;
+  text-align: center;
+
+
+}
+
+.TryIt {
+display: space-around;
+   background-color: #871719;
+ font-family: 'Calligraffitti', cursive;
+    text-transform: uppercase;
+    margin: 1em 0;
+  text-align: center;
+  font-size: 1.5em;  
+  font-weight: bold;
+  float:center;
+  color: #FDB913;
+}
+
+input {
+  /*height: 100px !important;*/
+/*width: 400px;*/
+/*white-space: pre;*/
+width: 45%;
+height: 7em;
+  border: 5px solid #871719;
+/*  min-width: 200px;*/
+}

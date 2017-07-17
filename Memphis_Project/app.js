@@ -58,3 +58,28 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+    // gradiant background slides..../
+const slides = document.querySelectorAll('.slide');
+
+let active = 0;
+
+function change(){
+  active++;
+  active = active%slides.length;
+  slides.forEach((slide, index) => {
+    if (index === active){
+      slide.style.zIndex = 0;
+      slide.style.opacity = 1;
+    } else if (index === active - 1){
+      slide.style.zIndex = -1;
+      slide.style.opacity = 1;
+    } else {
+      slide.style.opacity = 0;
+      slide.style.zIndex = -2;
+    }
+  });
+}
+
+change();
+
+setInterval(change, 4500);

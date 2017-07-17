@@ -1,0 +1,1 @@
+alert("It is perfectly okay to write garbage—as long as you edit brilliantly.– C. J. Cherryh");
