@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Project Memphis</title>
 
     <!-- Insert Style Sheet Here-->
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
-    <link rel = "stylesheet" type = "text/css" href = "css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <!-- Insert Google Fonts Here -->
-<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
-<!-- I wanted to see if I could use some pre-existing tech to add a widget to my page.  This is not my only use of JS in this application. -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script>
-jQuery(document).ready(function($) {
-  $.ajax({
-  url : "http://api.wunderground.com/api/703091f0be657093/geolookup/conditions/q/KY/Louisville.json",
-  dataType : "jsonp",
-  success : function(parsed_json) {
-  var location = parsed_json['location']['city'];
-  var temp_f = parsed_json['current_observation']['temp_f'];
-  alert("Current temperature in " + location + " is: " + temp_f);
-  }
-  });
-});
-</script>
+    <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+    <!-- I wanted to see if I could use some pre-existing tech to add a widget to my page.  This is not my only use of JS in this application. -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $.ajax({
+                url: "http://api.wunderground.com/api/703091f0be657093/geolookup/conditions/q/KY/Louisville.json",
+                dataType: "jsonp",
+                success: function(parsed_json) {
+                    var location = parsed_json['location']['city'];
+                    var temp_f = parsed_json['current_observation']['temp_f'];
+                    alert("Current temperature in " + location + " is: " + temp_f);
+                }
+            });
+        });
+    </script>
 
 </head>
 
 <body>
- <section class="header">
-            <div class="wrap">
-                <img src="img/hero_image.jpg">
-                <nav id="main-nav" role="navigation">
-                    <ul>
+    <section class="header">
+        <div class="wrap">
+            <img src="img/hero_image.jpg">
+
+            <nav id="main-nav" role="navigation">
+                <ul>
                     <!-- This is the main input page that I worked on to show interaction with JS.  The link leads to the page with interacion for the user -->
-                        <li><a href="input_form.html">Journal</a></li>
-                        <!-- Obviously this is not my page.  I just linked to Dilbert as a "daily awareness" because we shouldn't take ourselves so seriously.  No one gets out alive anyway -->
-                        <li><a href="http://dilbert.com/">Daily Awareness<link href="input_form.html"></a></li>
-                        <!-- This was a beginning on how I wanted to show some journal pages.  I was also trying to link html pages to the home page. -->
-                        <li><a href="stacked_Paper.html">Better Than Yesterday</a></li>
-                       <!-- Not really a contact page but a link to my linkedin page -->
-                        <li><a href="https://www.linkedin.com/in/john-eiler-07bbb15">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="hero-block">
-                    <h1>What is Lorem Ipsum?</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <a href="#" class="hero-button">View Menu</a>
-                </div>
-
+                    <li><a href="input_form.html">Journal</a></li>
+                    <!-- Obviously this is not my page.  I just linked to Dilbert as a "daily awareness" because we shouldn't take ourselves so seriously.  No one gets out alive anyway -->
+                    <li><a href="http://dilbert.com/">Daily Awareness<link href="input_form.html"></a></li>
+                    <!-- This was a beginning on how I wanted to show some journal pages.  I was also trying to link html pages to the home page. -->
+                    <li><a href="stacked_Paper.html">Better Than Yesterday</a></li>
+                    <!-- Not really a contact page but a link to my linkedin page -->
+                    <li><a href="https://www.linkedin.com/in/john-eiler-07bbb15">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hero-block">
+                <h1>What is Lorem Ipsum?</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <a href="#" class="hero-button">View Menu</a>
             </div>
-        </section>
+
+        </div>
+    </section>
     <!-- /Header I changed the multiple sections between the top and bottom to contrast color.  The backop class also uses hover to inverse the colors-->
-            <section class="center"> 
-                <div class="wrap">
-                    <h2>Where does it come from?</h2>
-                    <p class="p2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                    <a class="backtop">Back to the Top</a>
-                </div>
-                <footer>
-                <!-- This is the insertion of the widget -->
-                <span style="display: inline-flex; !important; width: 180px; text-align: center; font-family: sans-serif; font-size: 12px;"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:40201.1.99999&bannertypeclick=wu_travel_map2" title="Louisville, Kentucky Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_travel_map2&airportcode=KLOU&ForcedCity=Louisville&ForcedState=KY&zip=40201&language=EN" alt="Find more about Weather in Louisville, KY" width="160" /></a><br><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:40201.1.99999&bannertypeclick=wu_travel_map2" title="Get latest Weather Forecast updates" style="font-family: sans-serif; font-size: 12px" target="_blank"></a></span>
-                </footer>
-            </section>
+    <section class="center">
+        <div class="wrap">
+            <h2>Where does it come from?</h2>
+            <p class="p2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            <a href="#" class="backtop">Back to the Top</a>
+        </div>
+        <footer>
+            <!-- This is the insertion of the widget -->
+            <span style="display: inline-flex; !important; width: 180px; text-align: center; font-family: sans-serif; font-size: 12px;"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:40201.1.99999&bannertypeclick=wu_travel_map2" title="Louisville, Kentucky Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_travel_map2&airportcode=KLOU&ForcedCity=Louisville&ForcedState=KY&zip=40201&language=EN" alt="Find more about Weather in Louisville, KY" width="160" /></a><br><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:40201.1.99999&bannertypeclick=wu_travel_map2" title="Get latest Weather Forecast updates" style="font-family: sans-serif; font-size: 12px" target="_blank"></a></span>
+        </footer>
+    </section>
 
 
 
-<!-- 703091f0be657093_Key for Weather API -->
+    <!-- 703091f0be657093_Key for Weather API -->

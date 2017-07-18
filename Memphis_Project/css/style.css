@@ -130,7 +130,10 @@ nav a:hover {
   border-color: #871719;
   background-color: #871719;
 }
-
+img {
+   max-width: 80%;
+    height: auto;
+}
 
 /******Journal Page ******/
 /*.journal {
