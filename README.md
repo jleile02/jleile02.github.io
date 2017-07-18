@@ -1,32 +1,15 @@
 # memphis
 Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains what the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
-
-Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+This site was a work in progress that allowed me to go from not knowing a single line of code to trying multiple ways of completing a simple thought.  I wanted to provide navigation between pages, have the user type in their thoughts and transform that text into something different.  I also wanted to use the pages to show some simple formatting and responsiveness.  This page has tons of room for improvement and as my skills increase and my understanding of the dynamic and endless possiblities for HTML, CSS and JavaScript increases I can make iterative updates to these pages.  Ultimately I would like a page that allows for user input through journaling, a feature to save their work and a way to transform positive actions into a daily score.  The later of those items has yet to been fully thought out so I did not start developing a framework yet for that page.
 
 Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+I wanted a way to create a break from the traditional output of people daily lives and allow them to focus on themselves.  This is the first of many milestones to that goal.
 
 Installation
 
-Provide code examples and explanations of how to get the project.
+The home page is index.html.  You can navigate to one of four areas "Journal" to use the journal feature, Daily Awareness, to read dilbert comics, Better than yesterday, to look at a "stacked paper" example that I wanted to use as part of a future feature and a Contact to view my linked in.
 
-API Reference
+The main content for the Code Louisville Project are held within the index.html and the input_form.html (Journal) pages.  I seperated the html pages and css pages because I started with very limited knowledge and now I have just one level above limited.  I was still learning how different parts fo the code interacted with each other and I didn't want to mingle code until I had a better understanding of the implications.  The more I learn the better I can present and DRY best practice.
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-Tests
-
-Describe and show how to run the tests with code examples.
-
-Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-License
-
-A short snippet describing the license (MIT, Apache, etc.)
